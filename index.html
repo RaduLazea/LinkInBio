@@ -97,7 +97,24 @@
 
     <div class="Container" title="" itemscope itemtype="https://schema.org/Person">
         <header>
-            <img class="Avatar" src="poza1.jpg" alt="Imagine de profil" width="300" height="300" itemprop="image">
+            <!-- <img class="Avatar" src="Radu_Lazea.jpg" alt="Imagine de profil" width="300" height="300" itemprop="image"> -->
+
+            <picture class="Avatar">
+                <source type="image/webp" srcset="
+                Radu_Lazea-112.webp 112w,
+                Radu_Lazea-192.webp 192w
+                " sizes="
+                (max-width: 929px) 112px,
+                (min-width: 930px) clamp(130px, 14vw, 12rem)
+                " />
+                <img srcset="
+                Radu_Lazea-112.jpg 112w,
+                Radu_Lazea-192.jpg 192w
+                " sizes="
+                (max-width: 929px) 112px,
+                (min-width: 930px) clamp(130px, 14vw, 12rem)
+                " src="./Radu_Lazea.jpg" alt="Imagine de profil pentru Radu Lazea" loading="lazy" decoding="async" width="112" height="112" itemprop="image" />
+            </picture>
             
            
             
