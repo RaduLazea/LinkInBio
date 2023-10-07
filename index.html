@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="ro-RO">
+<html lang="ro-RO" class="no-js">
 
 <head>
+    <!-- setup -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="index, follow">
+
+
+    <!-- SEO -->
     <title>Radu Lazea - Link-uri utile</title>
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1,max-video-preview:-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- <meta name="viewport" content="index, follow"> -->
+
 
     <meta name="description"
         content="Toate link-urile mele. Profilurile de social media plus grupurile pe care sunt activ si unde raspund" />
@@ -23,24 +32,85 @@
 
     <link rel="stylesheet" href="/dist/css/style.css">
 
+    <meta name="twitter:site" content="@RaduLazea" />
+    <meta name="twitter:creator" content="@RaduLazea" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Acum ne uitam la meta-uri din pagina lui -->
+
+    <!-- design -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#4f6df5" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <meta name="theme-color" content="#4F6DF5">
+    <meta name="robots" content="max-image-preview:large, max-snippet:-1,max-video-preview:-1">
+    <meta property="og:description"
+        content="Toate link-urile mele. Profilurile de social media plus grupurile pe care sunt activ si unde raspund">
+
+    <meta property="article:publisher" content="https://www.facebook.com/RaduLazea.ro/" />
+    <meta property="article:section" content="Link In Bio" />
+    <meta property="article:published_time" content="2023-10-05T23:27:55+03:00" />
+    <meta property="article:modified_time" content="2023-10-05T23:27:57+03:00" />
+
+    <meta name="twitter:site" content="@RaduLazea" />
+    <meta name="twitter:creator" content="@RaduLazea" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- <link rel="apple-touch-icon" href="" /> -->
+
+    <meta name="apple-mobile-web-app-title" content="Radu Lazea Link-uri" />
+    <meta name="application-name" content="Radu Lazea Link-uri" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="theme-color" content="#ffffff" />
+
+
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link rel="icon" type="image/png" sizes="16x16" href="" />
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="icon" type="image/svg+xml" href="" /> -->
+
+    <!-- optimize -->
+    <script type="module">
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <link rel="preload" href="./Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin />
 
 </head>
 
-<body>
+<body itemscope="" itemtype="https://schema.org/ProfilePage">
     <!-- Trebuie sa facem structura paginii prima data -->
     <!-- Avem nevoie de un container prima data -->
 
-    <div class="Container" title="">
+    <div class="Container" title="" itemscope itemtype="https://schema.org/Person">
         <header>
-            <img class="Avatar" src="poza1.jpg" alt="Imagine de profil" width="300" height="300">
+            <img class="Avatar" src="poza1.jpg" alt="Imagine de profil" width="300" height="300" itemprop="image">
+            
+           
+            
             <h1 class="TitlulPaginii">
 
-                <strong> Radu Lazea </strong>
+                <strong itemprop="name"> Radu Lazea </strong>
 
             </h1>
+            <h2 class="SubtitlulPaginii" itemprop="jobTitle">Consultant Digital</h2>
 
-            <p class="DescrierePrincipala">Toate link-urile mele. Profilurile de social media plus grupurile pe care
-                sunt activ si unde raspund</p>
+            <p class="DescrierePrincipala" itemprop="description">Toate link-urile mele. Profilurile de social media
+                plus grupurile pe care sunt activ si unde raspund
+            </p>
         </header>
 
         <main>
@@ -50,42 +120,48 @@
                     <a href="https://www.facebook.com/raducu.lazea/" class="ListaLink"
                         title="Vezi profilul meu de Facebok" target="_blank" rel="noopener noreferrer">
                         <h2 class="ListaTitlu">👋Facebook</h2>
-                        <p class="ListaText">https://www.facebook.com/raducu.lazea/</p>
+                        <p class="ListaText" itemprop="url">https://www.facebook.com/raducu.lazea/</p>
                     </a>
                 </li>
                 <li class="ListaItem">
                     <a href="https://www.instagram.com/radulazea/" class="ListaLink"
                         title="Hai sa fim prieteni pe Insta" target="_blank" rel="noopener noreferrer">
                         <h2 class="ListaTitlu">✨Instagram</h2>
-                        <p class="ListaText">https://www.instagram.com/radulazea/</p>
+                        <p class="ListaText" itemprop="url">https://www.instagram.com/radulazea/</p>
                     </a>
                 </li>
                 <li class="ListaItem">
                     <a href="https://www.youtube.com/" class="ListaLink" title="Vezi ce am postat pe canal"
                         target="_blank" rel="noopener noreferrer">
                         <h2 class="ListaTitlu">🔴YouTube</h2>
-                        <p class="ListaText">https://www.youtube.com/</p>
+                        <p class="ListaText" itemprop="url">https://www.youtube.com/</p>
                     </a>
                 </li>
                 <li class="ListaItem">
                     <a href="https://twitter.com/Radu_Lazea" class="ListaLink" title="Ce a mai pus Elon?"
                         target="_blank" rel="noopener noreferrer">
                         <h2 class="ListaTitlu">#️⃣Twitter</h2>
-                        <p class="ListaText">https://twitter.com/Radu_Lazea</p>
+                        <p class="ListaText" itemprop="url">https://twitter.com/Radu_Lazea</p>
                     </a>
                 </li>
                 <li class="ListaItem">
                     <a href="https://www.linkedin.com/in/radu-lazea-488426155/" class="ListaLink" title="Job"
                         target="_blank" rel="noopener noreferrer">
                         <h2 class="ListaTitlu">💼LinkedIn</h2>
-                        <p class="ListaText">https://www.linkedin.com/in/radu-lazea-488426155/</p>
+                        <p class="ListaText" itemprop="url">https://www.linkedin.com/in/radu-lazea-488426155/</p>
                     </a>
                 </li>
                 <li class="ListaItem">
                     <a href="https://github.com/RaduLazea" class="ListaLink" title="Job" target="_blank"
                         rel="noopener noreferrer">
                         <h2 class="ListaTitlu">🏹GitHub</h2>
-                        <p class="ListaText">https://github.com/RaduLazea</p>
+                        <p class="ListaText" itemprop="url">https://github.com/RaduLazea</p>
+                    </a>
+                </li>
+                <li class="ListaItem">
+                    <a href="mailto:salut@radulazea.com" class="ListaLink" title="Trimite-mi mesaj">
+                        <h2 class="ListaTitlu">✉️Mail</h2>
+                        <p class="ListaText" itemprop="email">salut@radulazea.com</p>
                     </a>
                 </li>
             </ul>
@@ -97,8 +173,6 @@
         </footer>
 
     </div>
-
-
 
 </body>
 
