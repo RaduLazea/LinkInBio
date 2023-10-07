@@ -1,3 +1,16 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Inter';
+	font-weight: 100 900;
+	font-display: swap;
+	font-style: normal;
+	font-named-instance: 'Regular';
+	src: url("./Inter-roman.var.woff2?v=3.18") format("woff2");
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
 /* *{
  margin: 0;
  padding: 0;   
@@ -7,6 +20,13 @@ html {
 	background: black url("background.jpg") center center no-repeat;
 	background-size: cover;
 	color: white;
+	font-size: 16px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+}
+@supports (font-variation-settings: normal) {
+	html {
+		font-family: "Inter var", Helvetica, Arial, sans-serif;
+	}
 }
 
 body {
@@ -14,8 +34,8 @@ body {
 	display: block;
 	place-items: center;
 	margin: 0;
-	font-family: Inter, Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	/* font-family: Inter, Helvetica, Arial, sans-serif; */
+	/* font-size: 16px; */
 	line-height: 1.5em;
 
 	@media (min-width: 500px) {
@@ -48,81 +68,88 @@ body {
 	}
 }
 
-    header {}
+/* header {} */
 
-        .Avatar {
-            display: block;
+.Avatar {
+	display: block;
 
-            width: 112px;
-            height: auto;
-            margin: 0 1em 1em 0;
-            border-radius: 50%;
+	width: 112px;
+	height: auto;
+	margin: 0 1em 1em 0;
+	border-radius: 50%;
 
-            @media (min-width: 800px) {
-                width: clamp(130px, 14vw, 12rem);
-            }
-            @media (min-width: 400px) {
-                float: left;
-            }
-        }
+	@media (min-width: 800px) {
+		width: clamp(130px, 14vw, 12rem);
+	}
+	@media (min-width: 400px) {
+		float: left;
+	}
+}
 
-        .TitlulPaginii {
-            display: block;
-            margin: 0;
-            font-size: clamp(2rem, 6vw, 4rem);
-            line-height: 1em;
-        }
+.TitlulPaginii {
+	display: block;
+	margin: 0;
+	font-size: clamp(2rem, 6vw, 4rem);
+	line-height: 1em;
+}
 
-        .DescrierePrincipala {
-            display: block;
-            margin: 0.5em 0 1.5em;
-        }
+.SubtitlulPaginii {
+	display: block;
+	margin: 0;
+	font-size: clamp(1rem, 2vw, 2rem);
+	font-weight: 100;
+	line-height: 1em;
+}
 
-    main {
-        clear: both;
-    }
+.DescrierePrincipala {
+	display: block;
+	margin: 0.5em 0 1.5em;
+}
 
-        .ListaLinkuri {
-            display: block;
-            margin: 0;
-            padding: 0;
-            border-top: 1px solid #fff;
+main {
+	clear: both;
+}
 
-            @media (min-width: 1300px) {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-        }
+.ListaLinkuri {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #fff;
 
-            .ListaItem {
-                display: block;
-                margin: 0;
-                padding: 0;
-                border-bottom: 1px solid #fff;
-            }
-                .ListaLink {
-                    display: block;
-                    padding: 0.5em;
-                    color: #fff;
-                    text-decoration: none;
-                    & hover {
-                        background: white;
-                        color: black;
-                    }
-                }
+	@media (min-width: 1300px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
 
+.ListaItem {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #fff;
+}
+.ListaLink {
+	display: block;
+	padding: 0.5em;
+	color: #fff;
+	text-decoration: none;
+	& hover {
+		background: white;
+		color: black;
+	}
+}
 
-                    .ListaTitlu,
-                    .ListaText {
-                        display: block;
-                        margin: 0;
-                        padding: 0;
-                        font-size: 1em;
-                        line-height: 1.5em;
-                    }
+.ListaTitlu,
+.ListaText {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5em;
+}
 
-                    .ListaText {
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
+.ListaText {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
