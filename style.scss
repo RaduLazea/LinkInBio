@@ -140,8 +140,8 @@ main {
 	padding: 0.5em;
 	color: #fff;
 	text-decoration: none;
-	& hover {
-		background: white;
+	&:hover {
+		
 		color: black;
 	}
 }
